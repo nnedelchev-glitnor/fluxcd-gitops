@@ -8,6 +8,6 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: ./apps/team-base
+  path: ./apps/team-base/podinfo
   prune: true
   wait: true
