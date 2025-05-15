@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: podinfo
-  namespace: default 
+  namespace: default
 spec:
   selector:
     matchLabels:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: podinfo
-          image: ghcr.io/stefanprodan/podinfo:5.0.0 # {"$imagepolicy": "flux-system:podinfo"}
+          image: ghcr.io/stefanprodan/podinfo:6.9.0 # {"$imagepolicy": "flux-system:podinfo"}
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
