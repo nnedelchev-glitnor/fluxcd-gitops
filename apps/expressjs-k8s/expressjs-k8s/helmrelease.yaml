@@ -13,12 +13,12 @@ spec:
         name: expressjs-k8s
         namespace: expressjs-k8s
   interval: 10m
-  livenessProbe:
-    httpGet:
-      path: /links
-      port: http
-    initialDelaySeconds: 5
-    periodSeconds: 10
   values:
     ingress:
-        enabled: false
+      enabled: false
+    livenessProbe:
+      httpGet:
+        path: /links
+        port: http
+      initialDelaySeconds: 5
+      periodSeconds: 10
