@@ -16,10 +16,6 @@ spec:
   values:
     ingress:
       enabled: false
-    container:
-      livenessProbe:
-        httpGet:
-          path: /links
-          port: 8080
-        initialDelaySeconds: 5
-        periodSeconds: 10
+    livenessProbe:
+      enabled: false
+
