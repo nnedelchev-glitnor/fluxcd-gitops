@@ -19,6 +19,6 @@ spec:
     livenessProbe:
       httpGet:
         path: /links
-        port: http
+        port: 8080
       initialDelaySeconds: 5
       periodSeconds: 10
