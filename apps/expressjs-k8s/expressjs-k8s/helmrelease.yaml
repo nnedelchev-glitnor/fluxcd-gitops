@@ -13,3 +13,6 @@ spec:
         name: expressjs-k8s
         namespace: expressjs-k8s
   interval: 10m
+  values:
+    ingress:
+        enabled: false
